@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#17213a">
+  <meta name="description" content="山西财会岗位智能筛选与报名提醒">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icon.svg">
+  <title>晋才财会雷达</title>
+  <style>
+    :root{--navy:#17213a;--blue:#2563eb;--sky:#eaf2ff;--ink:#172033;--muted:#667085;--line:#e7eaf0;--bg:#f4f6fa;--white:#fff;--green:#087f5b;--amber:#b45309;--red:#c2413b;--shadow:0 10px 30px rgba(23,33,58,.08)}
+    *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif}
+    button,select,input{font:inherit}.shell{max-width:1180px;margin:auto;padding:0 18px 64px}
+    header{background:linear-gradient(135deg,#14203b,#24487e);color:white;padding:30px 0 54px;margin-bottom:-30px}
+    .head{max-width:1180px;margin:auto;padding:0 18px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+    .brand{display:flex;gap:14px;align-items:center}.mark{width:48px;height:48px;border-radius:15px;background:linear-gradient(145deg,#fff,#cfe0ff);color:#17366a;display:grid;place-items:center;font-size:25px;box-shadow:0 8px 22px rgba(0,0,0,.18)}
+    h1{font-size:25px;margin:0 0 5px}.sub{opacity:.78;font-size:13px}.sync{text-align:right;font-size:12px;opacity:.8}.sync b{display:block;font-size:14px;color:#fff;margin-top:4px}
+    .hero,.panel,.card{background:var(--white);border:1px solid rgba(231,234,240,.95);box-shadow:var(--shadow);border-radius:20px}
+    .hero{padding:20px;position:relative}.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.stat{padding:13px 15px;border-radius:15px;background:#f7f9fc}.stat strong{display:block;font-size:23px;color:var(--navy)}.stat span{font-size:12px;color:var(--muted)}
+    .profile{margin-top:15px;padding-top:15px;border-top:1px solid var(--line);display:flex;flex-wrap:wrap;gap:8px}.chip{padding:6px 10px;border-radius:999px;background:var(--sky);color:#254f91;font-size:12px}
+    .panel{margin-top:16px;padding:18px}.toolbar{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:14px}.toolbar h2{font-size:17px;margin:0}.refresh{border:0;border-radius:11px;background:var(--navy);color:white;padding:10px 14px;cursor:pointer}
+    .filters{display:grid;grid-template-columns:1.35fr repeat(4,1fr);gap:10px}.field label{font-size:11px;color:var(--muted);display:block;margin:0 0 5px 3px}.field select,.field input{width:100%;height:42px;border:1px solid var(--line);border-radius:11px;background:white;padding:0 11px;color:var(--ink);outline:none}.field input:focus,.field select:focus{border-color:#9ab8f5;box-shadow:0 0 0 3px #edf3ff}
+    .resultbar{display:flex;justify-content:space-between;align-items:center;margin:19px 2px 10px;color:var(--muted);font-size:13px}.resultbar strong{color:var(--ink)}
+    .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}.card{padding:18px;box-shadow:0 5px 18px rgba(23,33,58,.055);position:relative}.top{display:flex;justify-content:space-between;gap:12px}.type{font-size:11px;padding:5px 8px;border-radius:7px;background:#eef3ff;color:#315eaa;height:max-content;white-space:nowrap}.title{font-size:17px;font-weight:700;line-height:1.45;margin:2px 0 7px}.org{font-size:13px;color:var(--muted)}.meta{display:flex;flex-wrap:wrap;gap:7px;margin:14px 0}.meta span{background:#f5f6f8;border-radius:7px;padding:5px 8px;font-size:12px}.match{color:var(--green)!important;background:#eaf8f2!important}.try{color:var(--amber)!important;background:#fff5e6!important}
+    .important{background:#fff8e9;border-left:3px solid #f0a63a;padding:9px 11px;border-radius:7px;font-size:12px;color:#754b10;margin:10px 0}.summary{font-size:13px;line-height:1.7;color:#475467}.foot{display:flex;justify-content:space-between;align-items:center;border-top:1px solid var(--line);margin-top:14px;padding-top:13px;gap:10px}.deadline{font-size:12px;color:var(--muted)}.deadline.urgent{color:var(--red);font-weight:700}.link{color:var(--blue);text-decoration:none;font-size:13px;font-weight:650}.empty{text-align:center;background:white;border-radius:20px;padding:58px 20px;color:var(--muted);border:1px solid var(--line)}.empty strong{display:block;color:var(--ink);font-size:18px;margin:10px}
+    .notice{font-size:12px;color:var(--muted);line-height:1.6;margin:18px 3px}.hide{display:none}
+    @media(max-width:760px){header{padding:22px 0 48px}.head{align-items:flex-start}.sync{max-width:120px}.stats{grid-template-columns:repeat(2,1fr)}.filters{grid-template-columns:1fr 1fr}.field:first-child{grid-column:1/-1}.grid{grid-template-columns:1fr}.hero,.panel,.card{border-radius:17px}.shell{padding:0 12px 50px}.head{padding:0 14px}h1{font-size:21px}}
+  </style>
+</head>
+<body>
+<header><div class="head"><div class="brand"><div class="mark">晋</div><div><h1>晋才财会雷达</h1><div class="sub">面向税务硕士的山西财会求职助手</div></div></div><div class="sync">数据库更新时间<b id="updatedAt">读取中…</b></div></div></header>
+<main class="shell">
+  <section class="hero">
+    <div class="stats"><div class="stat"><strong id="total">0</strong><span>有效岗位</span></div><div class="stat"><strong id="strong">0</strong><span>专业强匹配</span></div><div class="stat"><strong id="cityCount">0</strong><span>覆盖城市</span></div><div class="stat"><strong id="urgent">0</strong><span>7日内截止</span></div></div>
+    <div class="profile"><span class="chip">2026届硕士</span><span class="chip">税务专业</span><span class="chip">初级会计师</span><span class="chip">英语六级</span><span class="chip">晋城户籍</span><span class="chip">团员</span><span class="chip">仅市区岗位</span></div>
+  </section>
+  <section class="panel">
+    <div class="toolbar"><h2>岗位筛选</h2><button class="refresh" id="refresh">读取最新岗位</button></div>
+    <div class="filters">
+      <div class="field"><label>搜索单位或岗位</label><input id="query" placeholder="例如：会计、税务、财务分析"></div>
+      <div class="field"><label>工作城市</label><select id="city"><option value="">山西全省市区</option></select></div>
+      <div class="field"><label>单位性质</label><select id="type"><option value="">全部类型</option><option>公务员</option><option>事业单位</option><option>央国企</option><option>银行/金融机构</option><option>民营企业</option></select></div>
+      <div class="field"><label>匹配程度</label><select id="match"><option value="">全部匹配度</option><option>强匹配</option><option>可尝试</option><option>备选</option></select></div>
+      <div class="field"><label>薪资阶梯</label><select id="salary"><option value="">全部（含未公开）</option><option value="unknown">仅待遇未公开</option><option value="5000">5000元及以上</option><option value="6000">6000元及以上</option><option value="7000">7000元及以上</option><option value="8000">8000元及以上</option><option value="10000">10000元及以上</option></select></div>
+    </div>
+  </section>
+  <div class="resultbar"><span>筛选结果：<strong id="count">0</strong> 个</span><span>信息以官方公告为准</span></div>
+  <section id="list" class="grid"></section>
+  <div class="notice">每天12:00自动检索和核验。页面“读取最新岗位”只同步数据库，不会在手机浏览器里现场搜索全网。县、县级市及乡镇岗位默认排除；公告未说明的信息如实标注“未说明”。</div>
+</main>
+<script>
+let jobs=[];
+const $=id=>document.getElementById(id);
+const esc=s=>String(s??'未说明').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+function daysLeft(d){if(!d)return null;const x=new Date(d+'T23:59:59+08:00');return Math.ceil((x-Date.now())/86400000)}
+function salaryPass(j,v){if(!v)return true;if(v==='unknown')return j.salaryMin==null;return j.salaryMin!=null&&Number(j.salaryMin)>=Number(v)}
+function render(){
+ const q=$('query').value.trim().toLowerCase(),city=$('city').value,type=$('type').value,match=$('match').value,sal=$('salary').value;
+ const filtered=jobs.filter(j=>(!q||[j.title,j.org,j.major,j.positionCategory,j.summary].join(' ').toLowerCase().includes(q))&&(!city||j.city===city)&&(!type||j.type===type)&&(!match||j.match===match)&&salaryPass(j,sal));
+ $('count').textContent=filtered.length;
+ $('list').innerHTML=filtered.length?filtered.map(j=>{const left=daysLeft(j.deadline),urgent=left!==null&&left>=0&&left<=7;const imp=(j.important||[]);return `
+ <article class="card"><div class="top"><div><div class="title">${esc(j.title)}</div><div class="org">${esc(j.org)} · ${esc(j.city)}</div></div><span class="type">${esc(j.type)}</span></div>
+ <div class="meta"><span class="${j.match==='强匹配'?'match':j.match==='可尝试'?'try':''}">${esc(j.match)}</span><span>${esc(j.degree)}</span><span>${esc(j.graduateYear)}</span><span>${esc(j.salary)}</span><span>${esc(j.assessment)}</span></div>
+ ${imp.length?'<div class="important">⚠ '+imp.map(esc).join('；')+'</div>':''}<div class="summary">${esc(j.summary)}</div>
+ <div class="foot"><span class="deadline ${urgent?'urgent':''}">${j.applyEnd?('截止：'+esc(j.applyEnd)):'截止时间未说明'}${urgent?'（'+left+'天）':''}</span><a class="link" href="${esc(j.url)}" target="_blank" rel="noopener">查看官方公告 →</a></div></article>`}).join(''):'<div class="empty" style="grid-column:1/-1"><div style="font-size:34px">⌕</div><strong>暂时没有符合当前筛选的岗位</strong><span>可以放宽筛选条件，或等待每天12点的核验更新。</span></div>';
+}
+async function load(){
+ $('refresh').disabled=true;$('refresh').textContent='正在同步…';
+ try{const r=await fetch('jobs.json?t='+Date.now(),{cache:'no-store'});const data=await r.json();jobs=Array.isArray(data.jobs)?data.jobs:[];$('updatedAt').textContent=data.updatedAt||'未更新';
+ const cities=[...new Set(jobs.map(j=>j.city).filter(Boolean))].sort();const old=$('city').value;$('city').innerHTML='<option value="">山西全省市区</option>'+cities.map(c=>'<option>'+esc(c)+'</option>').join('');$('city').value=old;
+ $('total').textContent=jobs.length;$('strong').textContent=jobs.filter(j=>j.match==='强匹配').length;$('cityCount').textContent=new Set(jobs.map(j=>j.city)).size;$('urgent').textContent=jobs.filter(j=>{const d=daysLeft(j.deadline);return d!==null&&d>=0&&d<=7}).length;render();
+ }catch(e){$('updatedAt').textContent='同步失败，请稍后重试'}finally{$('refresh').disabled=false;$('refresh').textContent='读取最新岗位'}
+}
+['query','city','type','match','salary'].forEach(id=>$(id).addEventListener(id==='query'?'input':'change',render));$('refresh').addEventListener('click',load);load();if('serviceWorker'in navigator)navigator.serviceWorker.register('sw.js');
+</script></body></html>
