@@ -1,0 +1,108 @@
+{
+  "date": "2026-10-05",
+  "task": "finance",
+  "result": {
+    "added": 0,
+    "changed": 5,
+    "removed": 0,
+    "total": 12,
+    "jobsCommit": "77b753fe600410e84c4393e0503b133c8d80bd44"
+  },
+  "scope": "检索覆盖山西11市财税审计、政府国企及银行线索，实际正文核验为建行总公告和山西分行公告、中行总公告、和创企业招聘页；未完成11市全部部门官网及附件逐一复核。",
+  "verified": [
+    {
+      "org": "建行山西分行",
+      "url": "https://job1.ccb.com/cn/job/announcement.html?annoId=20260902185007699802&planType=XY&isImpAnno=1",
+      "result": "修正总公告链接；确认2026届、专业不限、志愿限制和县域五年服务。市区机构名额仍待网申核实。"
+    },
+    {
+      "org": "中国银行",
+      "result": "仅复核总公告10月9日24时截止，不代表山西具体岗位附件复核完毕。"
+    },
+    {
+      "org": "和创",
+      "result": "官网会计助理仍展示，2026届/税务/市区/缺额仍待确认。"
+    }
+  ],
+  "exclusions": [
+    {
+      "org": "国家开发银行山西分行",
+      "positions": [
+        "产业投融岗",
+        "经济金融岗"
+      ],
+      "reason": "境内限2027年度毕业，财会用户2026届不符合。",
+      "url": "https://cdb2027.zhaopin.com/jobs/index.html?id=10126815"
+    },
+    {
+      "org": "建行山西分行",
+      "positions": [
+        "管理培训生"
+      ],
+      "reason": "境内限定2027年1—7月毕业，不符合2026届。"
+    }
+  ],
+  "unresolved": [
+    {
+      "org": "农行、工行、浦发、平安",
+      "reason": "官方入口仅返回动态页面壳、超时或导航，未重新核到职位正文，保留旧记录，不删除或虚称今日核验。"
+    },
+    {
+      "org": "华能山西综合能源财务",
+      "reason": "检索仅第三方线索且专业为会计财管，未取得官方岗位原文，不晋级。"
+    }
+  ],
+  "sevenDayDeadline": [
+    {
+      "id": "boc-shanxi-management-trainee-2027",
+      "org": "中国银行山西省分行",
+      "deadline": "2026-10-09"
+    },
+    {
+      "id": "boc-shanxi-marketing-service-2027",
+      "org": "中国银行山西省分行",
+      "deadline": "2026-10-09"
+    },
+    {
+      "id": "boc-shanxi-comprehensive-service-2027",
+      "org": "中国银行山西省分行",
+      "deadline": "2026-10-09"
+    },
+    {
+      "id": "abc-shanxi-urban-client-manager-2027",
+      "org": "中国农业银行山西省分行",
+      "deadline": "2026-10-08"
+    },
+    {
+      "id": "abc-shanxi-urban-comprehensive-2027",
+      "org": "中国农业银行山西省分行",
+      "deadline": "2026-10-08"
+    },
+    {
+      "id": "ccb-shanxi-customer-manager-2027",
+      "org": "中国建设银行山西省分行",
+      "deadline": "2026-10-08"
+    },
+    {
+      "id": "icbc-shanxi-professional-talent-2027",
+      "org": "中国工商银行山西分行",
+      "deadline": "2026-10-08"
+    },
+    {
+      "id": "icbc-shanxi-client-manager-2027",
+      "org": "中国工商银行山西分行",
+      "deadline": "2026-10-08"
+    },
+    {
+      "id": "icbc-shanxi-customer-service-manager-2027",
+      "org": "中国工商银行山西分行",
+      "deadline": "2026-10-08"
+    },
+    {
+      "id": "spdb-taiyuan-management-trainee-2027",
+      "org": "上海浦东发展银行太原分行",
+      "deadline": "2026-10-08"
+    }
+  ],
+  "note": "既有12条不等于本轮全部完成资格复核；没有新增岗位，不以搜索结果或未知市区岗位充数。"
+}
