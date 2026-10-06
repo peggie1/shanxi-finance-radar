@@ -1,0 +1,125 @@
+{
+  "date": "2026-10-06",
+  "repository": "peggie1/shanxi-finance-radar",
+  "counts": {
+    "before": 12,
+    "added": 0,
+    "changed": 10,
+    "removed": 0,
+    "after": 12
+  },
+  "changeKind": "10条银行记录删除未经合同证据支持的‘正式’用工表述，补充合同主体与直签性质待核实；不是10个新增岗位、不是招聘公告新增条件或确认派遣。",
+  "changedIds": [
+    "boc-shanxi-management-trainee-2027",
+    "boc-shanxi-marketing-service-2027",
+    "boc-shanxi-comprehensive-service-2027",
+    "abc-shanxi-urban-client-manager-2027",
+    "abc-shanxi-urban-comprehensive-2027",
+    "ccb-shanxi-customer-manager-2027",
+    "icbc-shanxi-professional-talent-2027",
+    "icbc-shanxi-client-manager-2027",
+    "icbc-shanxi-customer-service-manager-2027",
+    "spdb-taiyuan-management-trainee-2027"
+  ],
+  "verification": {
+    "scope": "分组检索山西11市，优先太原晋城；交叉税务官网、人社考试专栏、山西国资委、企业官网及银行官网。分组搜索不是11市所有页面逐页全覆盖。",
+    "officialRead": [
+      "建行山西分行2027公告动态正文：380为总招聘数，2026年1月—2027年7月毕业，客户经理先柜面后营销，基层2年/县域5年，10月8日24时截止；不能以全省机构范围保证市区。",
+      "和创官网会计助理：接受优秀应届生，财会相关专业及客户复购职责；2026届认定、税务专业、当前缺额及市区定岗待确认。",
+      "晋中公投2026财务公告：1月19日18时截止，排除。",
+      "税务局所属事业单位2026面试公告：6月13—14日面试，是既有考试后续，不是10月新开放报名。"
+    ],
+    "notAdded": {
+      "excludedCount": 2,
+      "reasons": [
+        "晋中公投财务已截止",
+        "山西税务局面试公告并非当前可报名招聘"
+      ]
+    },
+    "portalLimitations": [
+      "中行公告读取超时；农行、工行、平安动态岗位正文未重新成功获取。",
+      "浦发官网仅获得首页和导航，未本次复核太原具体岗位；不得声称读取了岗位附件。",
+      "交通银行官方招聘页返回暂无职位数据，未按第三方招聘摘要新增；暂无数据不等于银行没有招聘。",
+      "山西国资委和人社考试页面读取超时；无法据此判断无新增公告。"
+    ],
+    "preservation": "未逐条重新核验全部旧岗位附件。旧记录保留，专业和市区等待确认条件不改为已满足；没有因今日检索未搜到而删除。"
+  },
+  "sevenDayDeadlines": [
+    {
+      "id": "boc-shanxi-management-trainee-2027",
+      "title": "管理培训生（山西省分行）",
+      "org": "中国银行山西省分行",
+      "deadline": "2026-10-09",
+      "url": "https://www.boc.cn/aboutboc/bi4/202609/t20260903_25689311.html"
+    },
+    {
+      "id": "boc-shanxi-marketing-service-2027",
+      "title": "营业网点业务岗（营销服务）",
+      "org": "中国银行山西省分行",
+      "deadline": "2026-10-09",
+      "url": "https://www.boc.cn/aboutboc/bi4/202609/t20260903_25689311.html"
+    },
+    {
+      "id": "boc-shanxi-comprehensive-service-2027",
+      "title": "营业网点业务岗（综合服务）",
+      "org": "中国银行山西省分行",
+      "deadline": "2026-10-09",
+      "url": "https://www.boc.cn/aboutboc/bi4/202609/t20260903_25689311.html"
+    },
+    {
+      "id": "abc-shanxi-urban-client-manager-2027",
+      "title": "城区客户经理岗",
+      "org": "中国农业银行山西省分行",
+      "deadline": "2026-10-08",
+      "url": "https://career.abchina.com.cn/build/index.html#/RecruitmentNoticeList/99/-1"
+    },
+    {
+      "id": "abc-shanxi-urban-comprehensive-2027",
+      "title": "城区综合业务岗",
+      "org": "中国农业银行山西省分行",
+      "deadline": "2026-10-08",
+      "url": "https://career.abchina.com.cn/build/index.html#/RecruitmentNoticeList/99/-1"
+    },
+    {
+      "id": "ccb-shanxi-customer-manager-2027",
+      "title": "客户经理岗（市区机构优先选择）",
+      "org": "中国建设银行山西省分行",
+      "deadline": "2026-10-08",
+      "url": "https://job1.ccb.com/cn/job/announcement.html?annoId=20260902185007699802&planType=XY&isImpAnno=1"
+    },
+    {
+      "id": "icbc-shanxi-professional-talent-2027",
+      "title": "专业英才",
+      "org": "中国工商银行山西分行",
+      "deadline": "2026-10-08",
+      "url": "https://job.icbc.com.cn/pc/index.html#/main/school/home/struct"
+    },
+    {
+      "id": "icbc-shanxi-client-manager-2027",
+      "title": "客户经理",
+      "org": "中国工商银行山西分行",
+      "deadline": "2026-10-08",
+      "url": "https://job.icbc.com.cn/pc/index.html#/main/school/home/struct"
+    },
+    {
+      "id": "icbc-shanxi-customer-service-manager-2027",
+      "title": "客服经理",
+      "org": "中国工商银行山西分行",
+      "deadline": "2026-10-08",
+      "url": "https://job.icbc.com.cn/pc/index.html#/main/school/home/struct"
+    },
+    {
+      "id": "spdb-taiyuan-management-trainee-2027",
+      "title": "太原分行管理培训生",
+      "org": "上海浦东发展银行太原分行",
+      "deadline": "2026-10-08",
+      "url": "https://job.spdb.com.cn"
+    }
+  ],
+  "priorityOpen": [
+    "建行客户经理：2026届覆盖、专业不限，非纯财务岗，须选市区并确认定岗，10月8日24时截止。",
+    "浦发太原管培旧记录10月8日18时，中行山西3类旧记录10月9日24时；本次未重新读取其岗位附件，投递前以官方实时入口为准。",
+    "和创会计助理无公开截止，税务专业认可、销售占比及市区缺额待确认。"
+  ],
+  "salaryAndBenefits": "公告未明确个人薪资下限时salaryMin继续null；不把内部招聘入口、轮岗培养或集团宣传视为保证后台转岗和双休的依据。"
+}
