@@ -1,0 +1,161 @@
+{
+  "date": "2026-11-25",
+  "repository": "peggie1/shanxi-finance-radar",
+  "before": 5,
+  "after": 5,
+  "added": [],
+  "changed": [],
+  "removed": [],
+  "retention": "5条旧岗位均未公布报名截止，不因当天未搜到或来源临时不可读而删除；保留专业、届别、市区、出差和合同主体待确认提示，不宣称均为已确定可投或长期有效。",
+  "profile": "仅使用2026届税务硕士、团员、初级会计和六级、山西11设区市市区条件；未混用2027人文地理画像。",
+  "rechecked": [
+    {
+      "org": "和创财税集团",
+      "url": "https://www.hcfhy.cn/a-job.asp",
+      "result": "官方岗位页仍展示会计助理，应届/税务相关性、市区、销售复购占比待确认。",
+      "state": "保留备选，不以官网展示证明当前缺额"
+    },
+    {
+      "org": "天扬君合税务师事务所助理",
+      "url": "https://www.tianyangtax.net/call/call05",
+      "detail": "https://www.tianyangtax.net/callindex/calldetail/",
+      "result": "原校园太原列表税务助理2人，会计助理1人；具体正文仍2026硕士，税务助理明确税务等专业。会计助理计算机/会计等相关，税务待确认。列表与详情相关人数差异不改成新缩招事实；出差与市区定岗仍需确认。",
+      "state": "匿名HTTP200，原列表和正文已复核"
+    },
+    {
+      "org": "新华山西临汾合规风控J16809",
+      "url": "https://nci.zhiye.com/zpdetail/621152405",
+      "result": "官方HTML仍10月12日、本及以上应届、相关专业、临汾；2026届和税务及实际市区3项待确认，未设截止，不新增不改强匹配。",
+      "state": "匿名HTTP原文已复核"
+    },
+    {
+      "org": "通建山西小店财务141015",
+      "url": "https://wejob.chinatelecom.com.cn/wt/TELE/web/index?brandCode=1",
+      "result": "没有发现明确截止、撤销或资格变更证据，保留原2026/2027硕士、小店及税务需确认；不因动态页缺读而删除。",
+      "state": "本轮未重新定位到141015完整详情，沿用既有已核证据保留，不宣称本轮全文重核"
+    }
+  ],
+  "officialExclusions": [
+    {
+      "org": "浙商银行太原分行2026四季度",
+      "url": "https://zp.czbank.com.cn/zpWebMobile/loginController/checkPage.mvc?pageType=2",
+      "noticeCount": 1,
+      "positionCount": 4,
+      "reason": "授信/贷后/财富产品5年以上，理财2年以上经验；虽至12月31日开放，但毕业新手不符"
+    },
+    {
+      "org": "山西省征信有限公司2026社招",
+      "url": "https://sxzx.sxrzxy.cn/news/article/638ec50f-faf3-4e68-bb22-ab3172e2a1ed",
+      "noticeCount": 1,
+      "positionCount": 3,
+      "reason": "三岗硕士计算机/数据科学/AI/软件等相关，非税务认可。经验只是优先，不误报为经验硬限；不因征信风控字眼认可税务。"
+    },
+    {
+      "org": "山西省2026事业补充招聘",
+      "url": "https://rst.shanxi.gov.cn/rsks/sydwks/2026/202611/t20261107_10255544.shtml",
+      "noticeCount": 1,
+      "reason": "报名11月10日18:00已截止，且须3月28/29同类笔试40+；不将后续复审当新报名"
+    },
+    {
+      "org": "晋城事业补充招聘复审",
+      "url": "https://www.jcgov.gov.cn/dtxx/gsgg/202611/t20261120_2414623.shtml",
+      "noticeCount": 1,
+      "reason": "11月25仅原初审通过者递补复审，不面向新报名"
+    },
+    {
+      "org": "省审计厅通知",
+      "url": "https://sjt.shanxi.gov.cn/tzgg_285/202611/t20261124_10266138.html",
+      "reason": "审计专业资格考试证书现场审核，不是岗位招聘",
+      "notRecruitment": true
+    }
+  ],
+  "pendingClues": [
+    {
+      "org": "晋城地信测绘有限公司出纳",
+      "reason": "只追到招聘转载，城区政府403，单位中介超市身份不能替代招聘原文。临时用工、财会相关专业对税务及2026已毕业认可、市区岗位均须原文核清。",
+      "source": "https://zwfw.jcgov.gov.cn/Portal/Portal/Agency/AgencyInfo?id=54164"
+    },
+    {
+      "org": "山西地方铁路集团/华远国际陆港2026",
+      "reason": "第三方多地财务线索未追到当前有效官方公告，且可能旧批次，未入库"
+    },
+    {
+      "org": "山西政府投资资产太原分公司",
+      "reason": "转载显示11月20日截止，未据转载入库，不统计作本日官方已核岗位"
+    },
+    {
+      "org": "山西金融租赁",
+      "reason": "第三方11月2—6日社招已截止线索，官网深入页证书错误未绕过，不入库"
+    },
+    {
+      "org": "中国电力财务太原2027第一批",
+      "reason": "第三方国内仅2027且11月25截止，官方页未读到，不混2026画像或计官方核验排除"
+    },
+    {
+      "org": "国机重装太原科大宣讲",
+      "reason": "2026/2027和税务方向可作为线索，但工作单位城市未确认在山西；不能把太原宣讲地点当工作地"
+    }
+  ],
+  "sourceCoverage": {
+    "cities": [
+      "太原",
+      "晋城",
+      "大同",
+      "朔州",
+      "忻州",
+      "吕梁",
+      "晋中",
+      "阳泉",
+      "长治",
+      "临汾",
+      "运城"
+    ],
+    "method": "11市关键词交叉检索；省人社财政税务审计、国资、银行及企业官网并行交叉，不是11市所有栏目和全部下级单位全量核验。",
+    "provincePages": [
+      {
+        "url": "https://czt.shanxi.gov.cn/zwgk/tzgg_49454/",
+        "result": "当前12项财政业务非招聘，匿名HTTP200"
+      },
+      {
+        "url": "https://sjt.shanxi.gov.cn/",
+        "result": "主页及11月24资格考试通知可读，非招聘"
+      },
+      {
+        "url": "https://rst.shanxi.gov.cn/rsks/",
+        "result": "国考笔试及资格审核等流程通知，事业旧补录已截止"
+      },
+      {
+        "url": "https://shanxi.chinatax.gov.cn/xxgk/",
+        "result": "可见7月拟聘及6月体检递补等旧阶段，独立人员招录页依赖JS，未声称全历史页完整核验"
+      },
+      {
+        "url": "https://gzw.shanxi.gov.cn/xwfb/gqzp/",
+        "result": "官方栏目可读，当前首条10月12太重社招及8月晋阳资产等旧公告，不能当今天新增"
+      }
+    ],
+    "limits": "本日无满足届别、专业、市区且来源闭环的新岗位；部分动态官方具体页和地方原文未闭环，仍可能有遗漏，不能解释为全山西没有岗位。"
+  },
+  "priorityExisting": [
+    "tianyang-taiyuan-tax-firm-assistant-2026",
+    "citcc-shanxi-xiaodian-finance-campus-2027"
+  ],
+  "dueWithin7Days": [],
+  "deadlineNote": "旧5条截止均未说明，不能证明长期有效，应先核当前缺额与接收资格。",
+  "validation": {
+    "jsonParse": true,
+    "requiredFields": 32,
+    "enumCheck": true,
+    "uniqueIds": true,
+    "provinceIsShanxi": true,
+    "noPersonalOrGeoProfileData": true,
+    "oldJobsUnchanged": true,
+    "errors": []
+  },
+  "scopeCounts": {
+    "officialTechnicalOrExperienceExcludedNotices": 2,
+    "specificPositions": 7,
+    "expiredRecruitmentNotice": 1,
+    "reviewOnlyNotice": 1,
+    "nonRecruitmentAuditCertificateNotice": 1
+  }
+}
